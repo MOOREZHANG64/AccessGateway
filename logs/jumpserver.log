@@ -1,0 +1,507 @@
+2019-09-19 16:23:41 [adhoc ERROR] 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/ops/models/adhoc.py", line 225, in _run_and_record
+    raw, summary = self._run_only()
+TypeError: 'NoneType' object is not iterable
+2019-09-19 16:24:31 [adhoc ERROR] 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/ops/models/adhoc.py", line 225, in _run_and_record
+    raw, summary = self._run_only()
+TypeError: 'NoneType' object is not iterable
+2019-09-19 16:24:41 [adhoc ERROR] 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/ops/models/adhoc.py", line 225, in _run_and_record
+    raw, summary = self._run_only()
+TypeError: 'NoneType' object is not iterable
+2019-09-19 17:07:09 [log ERROR] Internal Server Error: /api/terminal/v1/terminal/status/
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2006, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python3.6/contextlib.py", line 51, in inner
+    with self._recreate_cm():
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2006, "Can't connect to MySQL server on '127.0.0.1' (111)")
+2019-09-19 17:07:10 [log ERROR] Internal Server Error: /api/terminal/v1/terminal/status/
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2006, "Can't connect to MySQL server on '127.0.0.1' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python3.6/contextlib.py", line 51, in inner
+    with self._recreate_cm():
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2006, "Can't connect to MySQL server on '127.0.0.1' (111)")
+2019-09-20 09:41:23 [adhoc ERROR] 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/ops/models/adhoc.py", line 225, in _run_and_record
+    raw, summary = self._run_only()
+TypeError: 'NoneType' object is not iterable
+2019-09-22 14:02:33 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:02:33 [ldap INFO] Authenticate user: None
+2019-09-22 14:03:47 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:03:47 [ldap INFO] Authenticate user: None
+2019-09-22 14:04:36 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:04:36 [ldap INFO] Authenticate user: None
+2019-09-22 14:15:32 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:15:32 [ldap INFO] Authenticate user: None
+2019-09-22 14:15:48 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:15:48 [ldap INFO] Authenticate user: None
+2019-09-22 14:17:31 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:17:31 [ldap INFO] Authenticate user: None
+2019-09-22 14:35:13 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:35:13 [ldap INFO] Authenticate user: None
+2019-09-22 14:35:29 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:35:29 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:36:26 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:36:26 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:38:14 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:38:14 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:39:22 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:39:22 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:41:00 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:41:00 [ldap INFO] Authenticate user: None
+2019-09-22 14:43:31 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:43:31 [ldap INFO] Authenticate user: 张(Moore Zhang)
+2019-09-22 14:44:26 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:44:26 [ldap INFO] Authenticate user: 张(Moore Zhang)
+2019-09-22 14:45:14 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:45:14 [ldap INFO] Authenticate user: 张(Moore Zhang)
+2019-09-22 14:45:58 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:45:58 [ldap INFO] Authenticate user: 张(Moore Zhang)
+2019-09-22 14:47:30 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:47:30 [ldap INFO] Authenticate user: None
+2019-09-22 14:47:40 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:47:40 [backend WARNING] (1062, "Duplicate entry 'moore.zhang@finest-tech.com' for key 'email'") while authenticating moore.zhang
+2019-09-22 14:47:40 [log ERROR] Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 255, in execute
+    self.errorhandler(self, exc, value)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 252, in execute
+    res = self._query(query)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 378, in _query
+    db.query(q)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.IntegrityError: (1062, "Duplicate entry 'moore.zhang@finest-tech.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/py3/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python3.6/contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "/opt/py3/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/opt/jumpserver/apps/authentication/views/login.py", line 76, in post
+    return super().post(request, *args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/opt/py3/lib64/python3.6/site-packages/django/forms/forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "/opt/py3/lib64/python3.6/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/opt/py3/lib64/python3.6/site-packages/django/forms/forms.py", line 382, in full_clean
+    self._clean_form()
+  File "/opt/py3/lib64/python3.6/site-packages/django/forms/forms.py", line 409, in _clean_form
+    cleaned_data = self.clean()
+  File "/opt/py3/lib64/python3.6/site-packages/django/contrib/auth/forms.py", line 196, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/opt/py3/lib64/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/opt/jumpserver/apps/authentication/backends/ldap.py", line 36, in authenticate
+    user = self.authenticate_ldap_user(ldap_user, password)
+  File "/opt/py3/lib64/python3.6/site-packages/django_auth_ldap/backend.py", line 210, in authenticate_ldap_user
+    return ldap_user.authenticate(password)
+  File "/opt/py3/lib64/python3.6/site-packages/django_auth_ldap/backend.py", line 350, in authenticate
+    self._get_or_create_user()
+  File "/opt/py3/lib64/python3.6/site-packages/django_auth_ldap/backend.py", line 609, in _get_or_create_user
+    populate_user.send(self.backend.__class__, user=self._user, ldap_user=self)
+  File "/opt/py3/lib64/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/opt/py3/lib64/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/opt/jumpserver/apps/authentication/signals_handlers.py", line 52, in on_ldap_create_user
+    user.save()
+  File "/opt/jumpserver/apps/users/models/user.py", line 433, in save
+    super().save(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py3/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 255, in execute
+    self.errorhandler(self, exc, value)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 252, in execute
+    res = self._query(query)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 378, in _query
+    db.query(q)
+  File "/opt/py3/lib64/python3.6/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'moore.zhang@finest-tech.com' for key 'email'")
+2019-09-22 14:48:46 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:48:46 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:49:37 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:49:37 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:50:37 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:50:37 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:57:58 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:57:58 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:59:27 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:59:27 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 14:59:41 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:59:41 [ldap INFO] Authenticate user: None
+2019-09-22 14:59:47 [ldap INFO] Authentication LDAP backend
+2019-09-22 14:59:47 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:00:50 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:00:50 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:07:40 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:07:40 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:08:50 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:08:50 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:10:02 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:10:02 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:15:26 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:15:27 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:41:27 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:41:27 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 15:41:41 [ldap INFO] Authentication LDAP backend
+2019-09-22 15:41:41 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 18:11:14 [ldap INFO] Authentication LDAP backend
+2019-09-22 18:11:14 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 18:13:24 [ldap INFO] Authentication LDAP backend
+2019-09-22 18:13:24 [ldap WARNING] cn=moore.zhang,ou=安几科技,dc=angeek,dc=com,dc=cn does not have a value for the attribute mail
+2019-09-22 18:13:24 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-22 18:22:28 [ldap INFO] Authentication LDAP backend
+2019-09-22 18:22:28 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 09:57:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 09:57:20 [ldap INFO] Authenticate user: None
+2019-09-23 10:07:14 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:07:14 [ldap INFO] Authenticate user: None
+2019-09-23 10:07:18 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:07:18 [ldap INFO] Authenticate user: None
+2019-09-23 10:07:45 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:07:45 [ldap INFO] Authenticate user: None
+2019-09-23 10:08:16 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:08:16 [ldap INFO] Authenticate user: None
+2019-09-23 10:08:30 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:08:30 [ldap INFO] Authenticate user: None
+2019-09-23 10:09:41 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:09:41 [ldap INFO] Authenticate user: None
+2019-09-23 10:13:52 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:13:52 [ldap INFO] Authenticate user: None
+2019-09-23 10:14:10 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:14:10 [ldap INFO] Authenticate user: None
+2019-09-23 10:16:54 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:16:54 [ldap INFO] Authenticate user: None
+2019-09-23 10:21:18 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:21:18 [ldap INFO] Authenticate user: None
+2019-09-23 10:21:38 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:21:38 [ldap INFO] Authenticate user: None
+2019-09-23 10:22:02 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:22:02 [ldap INFO] Authenticate user: None
+2019-09-23 10:37:45 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:37:45 [ldap INFO] Authenticate user: None
+2019-09-23 10:41:21 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:41:21 [ldap INFO] Authenticate user: None
+2019-09-23 10:46:08 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:46:08 [ldap INFO] Authenticate user: None
+2019-09-23 10:49:29 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:49:29 [ldap INFO] Authenticate user: None
+2019-09-23 10:49:59 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:49:59 [ldap INFO] Authenticate user: None
+2019-09-23 10:51:03 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:51:03 [ldap INFO] Authenticate user: None
+2019-09-23 10:51:32 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:51:32 [ldap INFO] Authenticate user: None
+2019-09-23 10:51:49 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:51:49 [ldap INFO] Authenticate user: None
+2019-09-23 10:54:11 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:54:11 [ldap INFO] Authenticate user: None
+2019-09-23 10:56:33 [ldap INFO] Authentication LDAP backend
+2019-09-23 10:56:33 [ldap INFO] Authenticate user: None
+2019-09-23 11:02:12 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:02:12 [ldap INFO] Authenticate user: None
+2019-09-23 11:08:17 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:08:17 [ldap INFO] Authenticate user: None
+2019-09-23 11:12:36 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:12:36 [ldap INFO] Authenticate user: None
+2019-09-23 11:38:45 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:38:45 [ldap INFO] Authenticate user: None
+2019-09-23 11:39:11 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:39:11 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 11:39:18 [ldap INFO] Authentication LDAP backend
+2019-09-23 11:39:18 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:12:55 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:12:55 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:13:02 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:13:02 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:14:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:14:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:24:44 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:24:44 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:36:15 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:36:15 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:51:53 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:51:53 [ldap INFO] Authenticate user: None
+2019-09-23 12:52:01 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:52:01 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:53:08 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:53:08 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 12:53:17 [ldap INFO] Authentication LDAP backend
+2019-09-23 12:53:17 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:08:26 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:08:26 [ldap INFO] Authenticate user: None
+2019-09-23 13:10:42 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:10:42 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:10:51 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:10:51 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:12:41 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:12:41 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:13:15 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:13:15 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:13:55 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:13:55 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:14:36 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:14:36 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:19:07 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:19:07 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:19:56 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:19:56 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:26:16 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:26:16 [ldap INFO] Authenticate user: None
+2019-09-23 13:28:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:28:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:38:05 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:38:05 [ldap INFO] Authenticate user: None
+2019-09-23 13:54:18 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:54:18 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:54:28 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:54:28 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:55:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:55:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 13:55:32 [ldap INFO] Authentication LDAP backend
+2019-09-23 13:55:32 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:00:07 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:00:07 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:00:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:00:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:28:13 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:28:13 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:28:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:28:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:55:36 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:55:36 [ldap INFO] Authenticate user: None
+2019-09-23 14:55:53 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:55:53 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:56:03 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:56:03 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 14:57:03 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:57:03 [ldap INFO] Authenticate user: None
+2019-09-23 14:59:25 [ldap INFO] Authentication LDAP backend
+2019-09-23 14:59:25 [ldap INFO] Authenticate user: None
+2019-09-23 15:02:29 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:02:29 [ldap INFO] Authenticate user: None
+2019-09-23 15:03:13 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:03:13 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 15:03:20 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:03:20 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 15:13:41 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:13:41 [ldap INFO] Authenticate user: None
+2019-09-23 15:15:23 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:15:23 [ldap INFO] Authenticate user: None
+2019-09-23 15:15:26 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:15:26 [ldap INFO] Authenticate user: None
+2019-09-23 15:15:29 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:15:30 [ldap INFO] Authenticate user: None
+2019-09-23 15:15:33 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:15:33 [ldap INFO] Authenticate user: None
+2019-09-23 15:15:47 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:15:47 [ldap INFO] Authenticate user: None
+2019-09-23 15:16:16 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:16:16 [ldap INFO] Authenticate user: None
+2019-09-23 15:16:23 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:16:23 [ldap INFO] Authenticate user: None
+2019-09-23 15:16:36 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:16:36 [ldap INFO] Authenticate user: None
+2019-09-23 15:21:28 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:21:28 [ldap INFO] Authenticate user: None
+2019-09-23 15:21:29 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:21:29 [ldap INFO] Authenticate user: None
+2019-09-23 15:46:46 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:46:46 [ldap INFO] Authenticate user: None
+2019-09-23 15:46:53 [ldap INFO] Authentication LDAP backend
+2019-09-23 15:46:53 [ldap INFO] Authenticate user: None
+2019-09-23 16:06:26 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:06:26 [ldap INFO] Authenticate user: None
+2019-09-23 16:06:41 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:06:41 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 16:06:46 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:06:46 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 16:07:40 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:07:40 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-23 16:36:44 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:36:44 [ldap INFO] Authenticate user: None
+2019-09-23 16:37:17 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:37:17 [ldap INFO] Authenticate user: None
+2019-09-23 16:37:33 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:37:33 [ldap INFO] Authenticate user: None
+2019-09-23 16:37:43 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:37:43 [ldap INFO] Authenticate user: None
+2019-09-23 16:38:19 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:38:19 [ldap INFO] Authenticate user: None
+2019-09-23 16:38:30 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:38:30 [ldap INFO] Authenticate user: None
+2019-09-23 16:40:53 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:40:53 [ldap WARNING] cn=yudask,ou=安几科技,dc=angeek,dc=com,dc=cn does not have a value for the attribute mail
+2019-09-23 16:40:53 [ldap INFO] Authenticate user: 郁(yudask)
+2019-09-23 16:41:42 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:41:42 [ldap WARNING] cn=yudask,ou=安几科技,dc=angeek,dc=com,dc=cn does not have a value for the attribute mail
+2019-09-23 16:41:42 [ldap INFO] Authenticate user: 郁(yudask)
+2019-09-23 16:55:02 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:55:02 [ldap INFO] Authenticate user: 贾(wenlong jia)
+2019-09-23 16:55:45 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:55:45 [ldap INFO] Authenticate user: 贾(wenlong jia)
+2019-09-23 16:56:29 [ldap INFO] Authentication LDAP backend
+2019-09-23 16:56:29 [ldap INFO] Authenticate user: 贾(wenlong jia)
+2019-09-24 08:57:31 [ldap INFO] Authentication LDAP backend
+2019-09-24 08:57:31 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-24 08:57:58 [ldap INFO] Authentication LDAP backend
+2019-09-24 08:57:58 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-24 09:01:43 [ldap INFO] Authentication LDAP backend
+2019-09-24 09:01:43 [ldap INFO] Authenticate user: None
+2019-09-24 09:01:55 [ldap INFO] Authentication LDAP backend
+2019-09-24 09:01:55 [ldap INFO] Authenticate user: None
+2019-09-24 09:02:22 [ldap INFO] Authentication LDAP backend
+2019-09-24 09:02:22 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-24 09:12:44 [ldap INFO] Authentication LDAP backend
+2019-09-24 09:12:44 [ldap INFO] Authenticate user: 张(Moore.Zhang)
+2019-09-24 10:19:43 [ldap INFO] Authentication LDAP backend
+2019-09-24 10:19:43 [ldap INFO] Authenticate user: None
+2019-09-24 10:20:15 [ldap INFO] Authentication LDAP backend
+2019-09-24 10:20:15 [ldap INFO] Authenticate user: None
+2019-09-24 10:20:46 [ldap INFO] Authentication LDAP backend
+2019-09-24 10:20:46 [ldap INFO] Authenticate user: None
+2019-09-24 10:22:14 [ldap INFO] Authentication LDAP backend
+2019-09-24 10:22:14 [ldap INFO] Authenticate user: None
+2019-09-24 10:25:56 [ldap INFO] Authentication LDAP backend
+2019-09-24 10:25:56 [ldap INFO] Authenticate user: 张(Moore.Zhang)
