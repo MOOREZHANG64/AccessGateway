@@ -1,0 +1,6 @@
+2019-09-19 12:38:49 任务开始: 测试资产用户可连接性: administrator@angeek.com.cn@192.168.3.60(192.168.3.60)
+PLAY [测试资产用户可连接性: administrator@angeek.com.cn@192.168.3.60(192.168.3.60)] ******
+TASK [ping] ********************************************************************
+fatal: [192.168.3.60]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+2019-09-19 12:38:51 任务结束
+Task assets.tasks.test_asset_users_connectivity_manual[045d5ee5-4185-4978-b238-ceb96eaba24d] succeeded in 2.1154967120000947s: None
